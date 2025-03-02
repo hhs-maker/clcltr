@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator </title>
+    <style>
+        .main{
+            background-color: grey;
+            padding: 3px ;
+            border: 2px solid black;
+            text-align: center;
+            width: 25%;
+            margin: auto;
+            border-radius: 2px ;
+            box-shadow: 5px 5px 10px rgb(58, 23, 23);
+        }
+        button{
+            background-color: black;
+            color: white;
+            margin-right: 4px;
+            border: 2px solid black ;
+            border-radius: 4px ;
+            margin-bottom: -5px;
+            padding: 4px 9px 4px 9px ;
+        }
+        input{
+            background-color: black;
+            color: white;
+        }
+        .clrbtn{
+            width: 55%;
+        }
+        #inp{
+            width: 85%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+     
+    <div class="main">
+        <div>
+            <input type="text " id="inp">
+        </div>
+        <br>
+        <div>
+            <button onclick="btnclick(7)">7</button>
+            <button onclick="btnclick(8)">8</button>
+            <button onclick="btnclick(9)">9</button>
+            <button onclick="btnclick('+')">+</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="btnclick(4)">4</button>
+            <button onclick="btnclick(5)">5</button>
+            <button onclick="btnclick(6)">6</button>
+            <button onclick="btnclick('-')">-</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="btnclick(1)">1</button>
+            <button onclick="btnclick(2)">2</button>
+            <button onclick="btnclick(3)">3</button>
+            <button onclick="btnclick('*')">*</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="btnclick(0)">0</button>
+            <button onclick="btnclick('/')">/</button>
+            <button onclick="btnclick('.')">.</button>
+            <button onclick="eqBtn('')">=</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="clrbtn()" class="clrbtn">Clear all </button>
+        </div>
+        <br>
+      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
